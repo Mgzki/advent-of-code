@@ -2,7 +2,6 @@ import readInput from '../../readInput.js'
 import os from 'os'
 
 function parseFunction(lines) {
-    const eolRegEx = new RegExp(os.EOL, "g")
     const rounds = String(lines.split(os.EOL)).split(',')
     // rock: X, paper: Y, scissors: Z
     // opponent - rock: A, paper: B, scissors: C

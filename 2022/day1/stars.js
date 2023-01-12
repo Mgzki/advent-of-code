@@ -2,9 +2,6 @@ import readInput from '../../readInput.js'
 import os from 'os'
 
 function parseFunction(lines) {
-
-    const eolRegEx = new RegExp(os.EOL, "g")
-
     // split on EOL and then split again on ',,' so that each element of elves is a string containing all the calories for a given elf separated by a ','
     let elves = String(lines.split(os.EOL)).split(',,')
     let caloriesOfElves = [];
